@@ -1,2 +1,113 @@
-# Auto detect text files and perform LF normalization
-* text=auto
+# ═══════════════════════════════════════════════════════════════════════════
+# LenguaMaster — Git Ignore File
+# ═══════════════════════════════════════════════════════════════════════════
+
+# ── Python ─────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ── Virtual Environments ───────────────────────────────────────────────────
+venv/
+ENV/
+env/
+.venv
+
+# ── Jupyter Notebooks ──────────────────────────────────────────────────────
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# ── IDEs & Editors ─────────────────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# ── PyTorch ────────────────────────────────────────────────────────────────
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+
+# ── TensorFlow ─────────────────────────────────────────────────────────────
+*.h5
+*.pb
+saved_model/
+*.tflite
+
+# ── Datasets ───────────────────────────────────────────────────────────────
+# Don't commit large datasets to Git
+data/raw/
+data/processed/
+data/custom/*.jpg
+data/custom/*.png
+data/custom/*.jpeg
+*.zip
+*.tar
+*.tar.gz
+*.rar
+
+# Keep the README to explain how to download datasets
+!data/README.md
+
+# ── Model Checkpoints ──────────────────────────────────────────────────────
+# Don't commit large model files (use Git LFS or external storage)
+models/*.pth
+models/*.pt
+models/*.h5
+models/*.ckpt
+models/*.tflite
+models/*.onnx
+
+# ── Results & Outputs ──────────────────────────────────────────────────────
+results/predictions/*.jpg
+results/predictions/*.png
+results/plots/*.png
+
+# Keep the metrics.json
+!results/metrics.json
+
+# ── Weights & Biases ───────────────────────────────────────────────────────
+wandb/
+
+# ── Logs ───────────────────────────────────────────────────────────────────
+*.log
+logs/
+runs/
+tensorboard/
+
+# ── Environment Variables ──────────────────────────────────────────────────
+.env
+.env.local
+
+# ── Temporary Files ────────────────────────────────────────────────────────
+*.tmp
+*.temp
+*.cache
+
+# ── OS-Specific ────────────────────────────────────────────────────────────
+Thumbs.db
+Desktop.ini
+.Trash-*
