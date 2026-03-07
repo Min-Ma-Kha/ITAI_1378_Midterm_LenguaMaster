@@ -1,0 +1,78 @@
+# ═══════════════════════════════════════════════════════════════════════════
+# LenguaMaster — Python Dependencies
+# ═══════════════════════════════════════════════════════════════════════════
+# Install: pip install -r requirements.txt
+
+# ── Core Deep Learning Frameworks ──────────────────────────────────────────
+torch>=2.0.0
+torchvision>=0.15.0
+tensorflow>=2.13.0
+tensorflow-lite>=2.13.0
+
+# ── Computer Vision ────────────────────────────────────────────────────────
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+Pillow>=10.0.0
+
+# ── Object Detection & OCR ─────────────────────────────────────────────────
+ultralytics>=8.0.0          # YOLOv8
+easyocr>=1.7.0              # Backup OCR library
+pytesseract>=0.3.10         # Tesseract OCR wrapper
+
+# ── Natural Language Processing ────────────────────────────────────────────
+transformers>=4.30.0        # Hugging Face Transformers (NMT)
+sentencepiece>=0.1.99       # Tokenization for NMT models
+sacremoses>=0.0.53          # Text preprocessing
+
+# ── Data Processing ────────────────────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+scipy>=1.11.0
+
+# ── Image Augmentation ─────────────────────────────────────────────────────
+albumentations>=1.3.0       # Advanced image augmentation
+imgaug>=0.4.0               # Image augmentation library
+
+# ── Visualization ──────────────────────────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.14.0
+
+# ── Experiment Tracking & MLOps ────────────────────────────────────────────
+wandb>=0.15.0               # Weights & Biases for experiment tracking
+tensorboard>=2.13.0         # TensorFlow visualization
+tqdm>=4.65.0                # Progress bars
+
+# ── Jupyter & Notebook ─────────────────────────────────────────────────────
+jupyter>=1.0.0
+jupyterlab>=4.0.0
+ipywidgets>=8.0.0
+notebook>=7.0.0
+
+# ── Utilities ──────────────────────────────────────────────────────────────
+pyyaml>=6.0                 # Configuration files
+python-dotenv>=1.0.0        # Environment variables
+requests>=2.31.0            # HTTP requests for dataset downloads
+gdown>=4.7.0                # Google Drive downloads
+
+# ── Testing (optional) ─────────────────────────────────────────────────────
+pytest>=7.4.0
+pytest-cov>=4.1.0
+
+# ── Code Quality (optional) ────────────────────────────────────────────────
+black>=23.0.0               # Code formatter
+flake8>=6.0.0               # Linter
+isort>=5.12.0               # Import sorter
+
+# ── Notes ──────────────────────────────────────────────────────────────────
+# - For GPU support, install PyTorch with CUDA:
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
+#
+# - Tesseract OCR requires system installation:
+#   Ubuntu/Debian: sudo apt-get install tesseract-ocr
+#   macOS: brew install tesseract
+#   Windows: Download from https://github.com/UB-Mannheim/tesseract/wiki
+#
+# - For YOLOv8, you may need to install ultralytics[export] for model conversion:
+#   pip install ultralytics[export]
