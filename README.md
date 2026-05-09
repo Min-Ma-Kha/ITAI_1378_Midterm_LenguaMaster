@@ -121,7 +121,7 @@ pip install python-bidi arabic-reshaper
 ```
 
 ### Run in Google Colab
-1. Open `notebooks/ITAI_1378_Final_LenguaMaster.ipynb` in Google Colab
+1. Open `ITAI_1378_Final_LenguaMaster.ipynb` in Google Colab
 2. Mount Google Drive and upload your datasets
 3. Run all cells in order (Steps 1–6)
 4. Test using Step 6 test cells (image, video, raw text)
