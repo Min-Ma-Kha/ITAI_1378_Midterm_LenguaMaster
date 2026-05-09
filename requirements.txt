@@ -1,0 +1,20 @@
+# Deep Learning Frameworks
+torch
+torchvision
+ultralytics
+transformers
+datasets
+
+# Computer Vision & OCR
+opencv-python-headless
+albumentations
+easyocr
+onnx
+onnxruntime
+
+# Text & Language Processing
+editdistance
+langdetect
+sentencepiece
+python-bidi
+arabic-reshaper
