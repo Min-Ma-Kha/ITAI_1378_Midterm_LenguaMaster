@@ -94,16 +94,6 @@
 
 ---
 
-## Entry 10
-**Date:** 2026-05-08 | **Step:** Submission — All Materials  
-**Tool:** Claude (Anthropic)  
-**Task:** Revise all submission materials to reflect M2M100 update, Step 6 addition, and auto-detection feature.  
-**AI Output:** Generated updated 12-slide PPTX with new Slide 4 (Step 6 M2M100), updated Slide 8 (Challenges including Helsinki-NLP fix), updated Slide 12 (Conclusion with M2M100 achievements), updated README.md and this AI usage log.  
-**How Used:** Reviewed all slides for factual accuracy. Updated dataset table to show M2M100 instead of MarianMT.  
-**Modification:** Fixed slide 5 dataset table entry from MarianMT Corpus to M2M100 (Meta) with MIT license.
-
----
-
 ## Summary
 
 | # | Step | Issue | Resolution |
@@ -117,4 +107,3 @@
 | 7 | Step 6 | bidi ImportError | Monkey-patch fallback |
 | 8 | Step 6 | Hardcoded Spanish output | Full auto-detection with langdetect |
 | 9 | Step 6 | Standalone test cells | Integrated as Steps 6.1–6.6 |
-| 10 | Submission | Outdated materials | Full revision with M2M100 + Step 6 |
